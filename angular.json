@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pean-boilerplate": {
+    "pecan": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pean-boilerplate",
+            "outputPath": "dist/pecan",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -39,7 +39,7 @@
               }
             ],
             "styles": [
-              "node_modules/ng-zorro-antd/ng-zorro-antd.dark.less",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.less",
               "src/styles.less"
             ],
             "scripts": [],
@@ -77,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "pean-boilerplate:build:production"
+              "buildTarget": "pecan:build:production"
             },
             "development": {
-              "buildTarget": "pean-boilerplate:build:development"
+              "buildTarget": "pecan:build:development"
             }
           },
           "defaultConfiguration": "development"
