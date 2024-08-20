@@ -1,28 +1,18 @@
-<nz-page-header nzTitle="PECAN">
-  <nz-page-header-title>PECAN</nz-page-header-title>
-  <nz-page-header-subtitle>Absolutely cracked.</nz-page-header-subtitle>
-  <nz-page-header-extra>
-    <!-- <nz-space>
-      <button *nzSpaceItem nz-button nzType="primary">Deploy on Coolify</button>
-    </nz-space> -->
-  </nz-page-header-extra>
-  <nz-page-header-content>
-  </nz-page-header-content>
-</nz-page-header>
-
-<div nz-row nzJustify="center" nzAlign="middle" style="min-height: calc(100vh - 64px); padding: 24px;">
-  <div nz-col [nzXs]="24" [nzMd]="12" style="text-align: center;">
-    <h1 nz-typography style="font-size: 3rem; margin-bottom: 1rem;">
-      Build Faster with PECAN
-    </h1>
-    <p nz-typography style="font-size: 1.5rem; margin-bottom: 2rem; color: #8c8c8c;">
-      PostgreSQL + Express + Coolify/Cloudflare + Angular + Node.js
-    </p>
-    <button nz-button nzType="primary" nzSize="large" style="background: rgb(255, 255, 255);
-    border: none;
-    color: rgb(41, 37, 36);">Deploy on Coolify</button>
+<app-layout>
+  <div nz-row nzJustify="center" nzAlign="middle" style="min-height: calc(100vh - 64px); padding: 24px;">
+    <div nz-col [nzXs]="24" [nzMd]="12" style="text-align: center;">
+      <h1 nz-typography style="font-size: 3rem; margin-bottom: 1rem;">
+        Build Faster with PECAN
+      </h1>
+      <p nz-typography style="font-size: 1.5rem; margin-bottom: 2rem; color: #8c8c8c;">
+        PostgreSQL + Express + Coolify/Cloudflare + Angular + Node.js
+      </p>
+      <button nz-button nzType="primary" nzSize="large" style="background: rgb(255, 255, 255);
+      border: none;
+      color: rgb(41, 37, 36);">Deploy on Coolify</button>
+    </div>
+    <div nz-col [nzXs]="24" [nzMd]="12" style="text-align: center;">
+      <img src="assets/PECAN-stack.svg" alt="PECAN Stack" style="max-width: 100%; height: auto;">
+    </div>
   </div>
-  <div nz-col [nzXs]="24" [nzMd]="12" style="text-align: center;">
-    <img src="assets/PECAN-stack.svg" alt="PECAN Stack" style="max-width: 100%; height: auto;">
-  </div>
-</div>
+</app-layout>
