@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  pecan-angular-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - API_URL=${API_URL}
+        - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+        - GITHUB_REDIRECT_URI=${GITHUB_REDIRECT_URI}
+        - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
+        - DB_HOST=${DB_HOST}
+        - DB_PORT=${DB_PORT}
+        - DB_NAME=${DB_NAME}
+        - DB_USER=${DB_USER}
+        - DB_PASSWORD=${DB_PASSWORD}
+    ports:
+      - "4000:4000"
+    environment:
+      - API_URL=${API_URL}
+      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+      - GITHUB_REDIRECT_URI=${GITHUB_REDIRECT_URI}
+      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}

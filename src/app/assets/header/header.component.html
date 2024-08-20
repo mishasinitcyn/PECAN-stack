@@ -1,0 +1,22 @@
+<nz-page-header>
+    <!-- Avatar -->
+    <!-- <nz-avatar nz-page-header-avatar [nzSrc]="'assets/PECAN-stack.svg'" nzSize="large" nzShape="square"></nz-avatar> -->
+    
+    <!-- Title and Subtitle -->
+    <nz-page-header-title>PECAN</nz-page-header-title>
+    <nz-page-header-subtitle>Absolutely Cracked</nz-page-header-subtitle>
+  
+    <!-- Logo / User Avatar -->
+    <!-- <nz-page-header-extra>
+      <nz-avatar *ngIf="user$ | async as user; else githubIcon" nz-page-header-avatar nzSize="large" [nzSrc]="user.avatar_url"></nz-avatar>
+      <ng-template #githubIcon>
+        <nz-avatar nz-page-header-avatar nzIcon="github" nzSize="large" [nzSrc]="'assets/github.svg'" (click)="login()"></nz-avatar>
+      </ng-template>
+    </nz-page-header-extra> -->
+  
+
+    <!-- Footer -->
+    <nz-page-header-footer>
+      <ng-content select="[headerFooter]"></ng-content>
+    </nz-page-header-footer>
+  </nz-page-header>
