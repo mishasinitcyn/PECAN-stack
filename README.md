@@ -19,7 +19,7 @@ This repository serves as boilerplate for a full-stack application using the PEC
 - Create a `.env` file following `.env.example`
 - Run `npm install --legacy-peer-deps`
 - Run `docker-compose up --build` (make sure you have Docker installed)
-- Visit localhost:4000
+- Visit localhost:3000
 
 # Theme
 This project uses the [NG-ZORRO](https://ng.ant.design/docs/introduce/en) component library. You can toggle the theme in angular.json.

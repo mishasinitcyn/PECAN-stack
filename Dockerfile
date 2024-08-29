@@ -37,7 +37,7 @@ RUN echo "Contents of environment.ts:" && cat src/environments/environment.ts
 RUN npm run build
 
 # Expose the port the app runs on
-EXPOSE 4000
+EXPOSE 3000
 
 # Command to run the application
 CMD ["sh", "-c", "API_URL=$API_URL GITHUB_CLIENT_ID=$GITHUB_CLIENT_ID GITHUB_REDIRECT_URI=$GITHUB_REDIRECT_URI GITHUB_CLIENT_SECRET=$GITHUB_CLIENT_SECRET DB_HOST=$DB_HOST DB_PORT=$DB_PORT DB_NAME=$DB_NAME DB_USER=$DB_USER DB_PASSWORD=$DB_PASSWORD   npm run serve:ssr:pecan"]

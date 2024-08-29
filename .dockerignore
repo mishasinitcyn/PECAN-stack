@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+README.md
+src/environments/environment.ts
+src/environments/environment.prod.ts
+# Do not ignore the template file
+!src/environments/environment.prod.template.ts
